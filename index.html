@@ -15,31 +15,32 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ededed;
+            background: linear-gradient(135deg, #1a1b23 0%, #232530 100%);
             min-height: 100vh;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
             text-align: center;
         }
 
         .hero {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(35, 37, 48, 0.95);
             border-radius: 20px;
             padding: 3rem 2rem;
             margin: 2rem 0;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         h1 {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4A50CE 0%, #7c3aed 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -47,7 +48,7 @@
 
         .subtitle {
             font-size: 1.2rem;
-            color: #666;
+            color: #c084fc;
             margin-bottom: 2rem;
         }
 
@@ -60,25 +61,27 @@
         }
 
         .feature {
-            background: #f8f9fa;
+            background: rgba(26, 27, 35, 0.8);
             padding: 1.5rem;
             border-radius: 12px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #4A50CE;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .feature h3 {
-            color: #667eea;
+            color: #4A50CE;
             margin-bottom: 0.5rem;
         }
 
         .privacy-badge {
-            background: #10b981;
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
             display: inline-block;
             margin: 1rem 0;
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
         }
 
         .waitlist-form {
@@ -89,20 +92,27 @@
         .waitlist-form input {
             width: 100%;
             padding: 1rem;
-            border: 2px solid #e5e7eb;
+            border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 8px;
             font-size: 1rem;
             margin-bottom: 1rem;
             transition: border-color 0.3s;
+            background: rgba(26, 27, 35, 0.8);
+            color: #ededed;
         }
 
         .waitlist-form input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #4A50CE;
+            box-shadow: 0 0 0 3px rgba(74, 80, 206, 0.1);
+        }
+
+        .waitlist-form input::placeholder {
+            color: rgba(237, 237, 237, 0.6);
         }
 
         .waitlist-form button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4A50CE 0%, #7c3aed 100%);
             color: white;
             border: none;
             padding: 1rem 2rem;
@@ -110,24 +120,27 @@
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
             width: 100%;
+            box-shadow: 0 4px 12px rgba(74, 80, 206, 0.3);
         }
 
         .waitlist-form button:hover {
             transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(74, 80, 206, 0.4);
         }
 
         .footer {
             margin-top: 3rem;
             padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            color: rgba(255, 255, 255, 0.8);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(237, 237, 237, 0.8);
         }
 
         .footer a {
-            color: rgba(255, 255, 255, 0.8);
+            color: #4A50CE;
             text-decoration: none;
+            font-weight: 500;
         }
 
         .footer a:hover {
@@ -173,7 +186,7 @@
             </div>
 
             <h2 style="margin: 2rem 0 1rem;">Join the Waitlist</h2>
-            <p style="color: #666; margin-bottom: 2rem;">Be the first to know when Private AI Note launches on iOS and Android.</p>
+            <p style="color: rgba(237, 237, 237, 0.7); margin-bottom: 2rem;">Be the first to know when Private AI Note launches on iOS and Android.</p>
 
             <form class="waitlist-form" action="YOUR_WAITLIST_FORM_URL" method="POST" target="_blank">
                 <input type="email" name="emailAddress" placeholder="Enter your email address" required>
@@ -187,7 +200,7 @@
 
         <div class="footer">
             <p>
-                <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="PRIVACY_POLICY.html">Privacy Policy</a> |
                 Built with privacy in mind • Coming soon to App Store & Google Play
             </p>
         </div>
