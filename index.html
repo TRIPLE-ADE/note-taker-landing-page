@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Private AI Note - Coming Soon</title>
-    <meta name="description" content="Your private AI assistant for note-taking. Everything stays on your device - no cloud, no tracking, just privacy.">
+    <meta name="description"
+        content="Your private AI assistant for note-taking. Everything stays on your device - no cloud, no tracking, just privacy.">
     <style>
         * {
             margin: 0;
@@ -162,6 +164,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="hero">
@@ -186,12 +189,14 @@
             </div>
 
             <h2 style="margin: 2rem 0 1rem;">Join the Waitlist</h2>
-            <p style="color: rgba(237, 237, 237, 0.7); margin-bottom: 2rem;">Be the first to know when Private AI Note launches on iOS and Android.</p>
+            <p style="color: rgba(237, 237, 237, 0.7); margin-bottom: 2rem;">Be the first to know when Private AI Note
+                launches on iOS and Android.</p>
 
-            <form class="waitlist-form" action="YOUR_WAITLIST_FORM_URL" method="POST" target="_blank">
-                <input type="email" name="emailAddress" placeholder="Enter your email address" required>
-                <button type="submit">Join Waitlist</button>
-            </form>
+            <div class="waitlist-form">
+                <input type="email" id="waitlist-email" placeholder="Enter your email address" required>
+                <button onclick="joinWaitlist()">Join Waitlist</button>
+            </div>
+
 
             <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
                 We respect your privacy. Your email will only be used to notify you about the app launch.
@@ -200,10 +205,28 @@
 
         <div class="footer">
             <p>
-                <a href="PRIVACY_POLICY.html">Privacy Policy</a> |
+                <a href="PRIVACY_POLICY.md">Privacy Policy</a> |
                 Built with privacy in mind • Coming soon to App Store & Google Play
             </p>
         </div>
     </div>
 </body>
+<script>
+    function joinWaitlist() {
+        const email = document.getElementById("waitlist-email").value.trim();
+        if (!email) {
+            alert("Please enter your email");
+            return;
+        }
+
+        const formId = "1FAIpQLSc5Nvty7W40WjkGgZZQWWwveTQqCyU0bDWMuiinxu-mRuFWDQ";
+
+        const emailEntry = "entry.2079336744";
+
+        const url = `https://docs.google.com/forms/d/e/${formId}/viewform?${emailEntry}=${encodeURIComponent(email)}`;
+
+        window.open(url, "_blank");
+    }
+</script>
+
 </html>
