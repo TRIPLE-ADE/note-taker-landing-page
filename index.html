@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private AI Note - Coming Soon</title>
+    <meta name="description" content="Your private AI assistant for note-taking. Everything stays on your device - no cloud, no tracking, just privacy.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            text-align: left;
+        }
+
+        .feature {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .privacy-badge {
+            background: #10b981;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        .waitlist-form {
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .waitlist-form input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .waitlist-form input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .waitlist-form button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            width: 100%;
+        }
+
+        .waitlist-form button:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Private AI Note</h1>
+            <p class="subtitle">Your private AI assistant for note-taking. Everything stays on your device.</p>
+
+            <div class="privacy-badge">🔒 No Data Collection • Offline-First • Privacy by Design</div>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>🎙️ Voice to Text</h3>
+                    <p>Record audio notes and get instant AI transcription using advanced speech recognition.</p>
+                </div>
+                <div class="feature">
+                    <h3>🤖 AI Assistant</h3>
+                    <p>Chat with AI to summarize, organize, and enhance your notes with local AI models.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔐 Complete Privacy</h3>
+                    <p>All processing happens on your device. No cloud storage, no data transmission, no tracking.</p>
+                </div>
+            </div>
+
+            <h2 style="margin: 2rem 0 1rem;">Join the Waitlist</h2>
+            <p style="color: #666; margin-bottom: 2rem;">Be the first to know when Private AI Note launches on iOS and Android.</p>
+
+            <form class="waitlist-form" action="YOUR_WAITLIST_FORM_URL" method="POST" target="_blank">
+                <input type="email" name="emailAddress" placeholder="Enter your email address" required>
+                <button type="submit">Join Waitlist</button>
+            </form>
+
+            <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                We respect your privacy. Your email will only be used to notify you about the app launch.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="PRIVACY_POLICY.md">Privacy Policy</a> |
+                Built with privacy in mind • Coming soon to App Store & Google Play
+            </p>
+        </div>
+    </div>
+</body>
+</html>
