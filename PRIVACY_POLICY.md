@@ -8,6 +8,30 @@ Private AI Note ("we," "our," or "us") is committed to protecting your privacy. 
 
 **Important: Our app is designed to be completely offline-first. No user-generated content (notes, audio recordings, or images) is ever transmitted to our servers or any external services.**
 
+## App Permissions & Why We Need Them
+
+Private AI Note requests the following permissions to provide its core functionality. All permissions are optional and you can deny them, though some features may not work without them.
+
+### Microphone Access
+- **Permission**: RECORD_AUDIO, MODIFY_AUDIO_SETTINGS
+- **Why needed**: To record audio notes and enable voice-to-text transcription using Whisper AI
+- **How used**: Audio is processed locally on your device and stored in your notes
+- **Data handling**: Audio recordings stay on your device and are never transmitted
+
+### Photos/Media Access
+- **Permission**: READ_EXTERNAL_STORAGE, READ_MEDIA_IMAGES
+- **Why needed**: To allow you to attach images to your notes
+- **How used**: Images are copied to your local note storage
+- **Data handling**: Images remain on your device and are not uploaded anywhere
+
+### Background Recording (Android)
+- **Permission**: FOREGROUND_SERVICE, FOREGROUND_SERVICE_MICROPHONE, FOREGROUND_SERVICE_MEDIA_PLAYBACK
+- **Why needed**: To continue recording audio notes even when the app is in the background
+- **How used**: Shows a persistent notification during recording to indicate active recording
+- **Data handling**: All audio processing and storage happens locally
+
+**Important:** These permissions are only used for the stated purposes and all data stays on your device. You can revoke permissions at any time through your device settings.
+
 ## Information We Collect
 
 ### Information Stored Locally on Your Device
